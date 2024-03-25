@@ -253,7 +253,7 @@ for i1 in tqdm(os.listdir(folderPath)):
 			# Seeing the New image
 			cv2.imshow('video', image)
 			success, image = cap.read()
-			if cv2.waitKey(5) & 0xFF == 27:
+			if cv2.waitKey(1) & 0xFF == ord('s'):
 				break
 	cap.release()
 	cv2.destroyAllWindows()
